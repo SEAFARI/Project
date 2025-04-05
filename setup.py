@@ -10,7 +10,7 @@ def get_requirements(file_path: str) -> List[str]:
     requirements = []
     with open(file_path, 'r') as file_obj:
         requirements = file_obj.readlines()
-        requirements = [req.strip() for req in requirements if req.strip() and not req.startswith("#")]
+        requirements = [req.replace('\n','') for req in requirements]
 
         if HYPHEN_E_DOT in requirements:
             requirements.remove(HYPHEN_E_DOT)
