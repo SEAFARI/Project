@@ -5,6 +5,8 @@ __pycache__/
 
 # C extensions
 *.so
+*.zone.identifier
+*.Zone.Identifier
 
 # Distribution / packaging
 .Python
@@ -128,6 +130,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+.artifacts
 .env
 .venv
 env/
